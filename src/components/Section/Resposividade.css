@@ -53,5 +53,22 @@
         width: 50px;
     }
 
+    .content h1 {
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+    }
+    
+    .content .make {
+        display: block;
+        font-size: 4rem;
+    }
+    
+    .content .remote-work {
+        display: block;
+        font-size: 4rem; /* Adjust the size if needed */
+        margin-top: 0.5rem; /* Adjust the spacing if needed */
+    }
+
     
 }
