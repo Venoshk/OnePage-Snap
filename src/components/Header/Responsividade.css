@@ -1,34 +1,44 @@
-@media screen and (max-width: 768px){
-/*Melhorar resposividade*/
+@media screen and (max-width: 768px) {
     header{
         justify-content: space-between;
+        font-size: 2.2rem;
     }
-    header > .content-nav{
-        position: fixed;
-        border: 2px solid red;
-        height: 100vh;
-        right: 0;
-        bottom: 0;
-        width: 70%;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 2rem;
-        background-color: hsl(0, 0%, 98%);
-        font-size: 18px;
-        transform: translateX(120%);
+    header > .content-nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 60%;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: hsl(0, 0%, 98%);
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 9999;
+    }
+  
+    header > .content-nav.open {
+      transform: translateX(0);
+    }
+  
+    header > .content-nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    header > .content-nav > .btns {
+      flex-direction: column;
+      gap: 1rem;
     }
 
-    header > .content-nav .hist{
-        margin-top: 4rem;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+    header > .content-nav > .btns > a.register{
+        width: 200px;
+        text-align: center;
     }
-
-    header > .content-nav > .btns{
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-      }
-}
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
