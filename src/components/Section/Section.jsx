@@ -34,9 +34,10 @@ export const Section = () => {
         <div className="container">
             <div className="content">
                 <div className="content-text">
-                    <h1>Make 
-                        Remote work
-                    </h1>
+                        <h1>
+                            <span className="make">Make</span>
+                            <span className="remote-work">Remote work</span>
+                        </h1>
                     
                     <p>Get your team in sync, no matter your location. Streamline processeses. create team rituals, and watch productivity soar.</p>
 
